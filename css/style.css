@@ -6,6 +6,12 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
 
+/* Custom */
+
+  .link {
+    color: #3E73FF;
+  }
+
 /* Basic */
 
 	body {
@@ -59,6 +65,11 @@
 
 	h3 {
 		font-size: 1.25em;
+	}
+
+  h4 {
+		font-size: 1em;
+		margin-bottom: 1.5em;
 	}
 
 	sub {
@@ -472,7 +483,7 @@
 /* Header */
 
 	#header {
-		background: #333333 url("../images/1.jpg") no-repeat;
+		background: #333333 url("../images/2_sideview.jpg") no-repeat;
 		background-size: cover;
 		color: #fff;
 		padding: 6em 0;
@@ -589,7 +600,7 @@
 			line-height: 1.6em;
 			font-size: 1.5em;
 		}
-		
+
 		#banner a {
 			color: inherit;
 		}
