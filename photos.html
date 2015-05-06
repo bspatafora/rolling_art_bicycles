@@ -15,6 +15,9 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/images-loaded.js"></script>
+    <script src="js/masonry.js"></script>
+    <script src="js/photos.js"></script>
     <script src="//cdn.rawgit.com/noelboss/featherlight/0.4.9/release/featherlight.min.js"></script>
     <link rel="stylesheet" href="//cdn.rawgit.com/noelboss/featherlight/0.4.9/release/featherlight.min.css" />
     <noscript>
@@ -36,7 +39,7 @@
             <nav id="nav">
               <ul>
                 <li><a href="/#about">About</a></li>
-                <li><a href="#photos">Photos</a></li>
+                <li><a href="/photos.html">Photos</a></li>
                 <li><a href="/accessories.html">Accessories</a></li>
                 <li><a href="/media.html">Media</a></li>
                 <li><a href="#footer">Contact</a></li>
@@ -58,90 +61,88 @@
       </div>
 
     <!-- Photos -->
-      <div id="photos" class="wrapper style2">
-        <section class="container">
-          <div class="row no-collapse-1">
-            <section class="3u">
-              <a href="images/head_tube_badge.jpg" class="image feature" data-featherlight="image">
-                <img src="images/head_tube_badge.jpg" alt="Head tube badge. Padauk and tiger maple.">
-              </a>
-              <p>Head tube badge. Padauk and tiger maple.</p>
-            </section>
-            <section class="3u">
-              <a href="images/sideview.jpg" class="image feature" data-featherlight="image">
-                <img src="images/sideview.jpg" alt="Sideview. Internal cables, adjustable rear dropouts.">
-              </a>
-              <p>Sideview. Internal cables, adjustable rear dropouts.</p>
-            </section>
-            <section class="3u">
-              <a href="images/rear_triangle.jpg" class="image feature" data-featherlight="image">
-                <img src="images/rear_triangle.jpg" alt="Rear triangle. Adjustable rear dropouts, anodized aluminum.">
-              </a>
-              <p>Rear triangle. Adjustable rear dropouts, anodized aluminum.</p>
-            </section>
-            <section class="3u">
-              <a href="images/completed_bike.jpg" class="image feature" data-featherlight="image">
-                <img src="images/completed_bike.jpg" alt="Completed bike.">
-              </a>
-              <p>Completed bike.</p>
-            </section>
+      <div class="wrapper style2">
+        <section id="photos" class="container">
+          <section class="photo">
+            <a href="images/head_tube_badge.jpg" data-featherlight="image">
+              <img src="images/head_tube_badge.jpg" alt="Head tube badge. Padauk and tiger maple.">
+            </a>
+            <p>Head tube badge. Padauk and tiger maple.</p>
+          </section>
+          <section class="photo">
+            <a href="images/sideview.jpg" data-featherlight="image">
+              <img src="images/sideview.jpg" alt="Sideview. Internal cables, adjustable rear dropouts.">
+            </a>
+            <p>Sideview. Internal cables, adjustable rear dropouts.</p>
+          </section>
+          <section class="photo">
+            <a href="images/rear_triangle.jpg" data-featherlight="image">
+              <img src="images/rear_triangle.jpg" alt="Rear triangle. Adjustable rear dropouts, anodized aluminum.">
+            </a>
+            <p>Rear triangle. Adjustable rear dropouts, anodized aluminum.</p>
+          </section>
+          <section class="photo">
+            <a href="images/completed_bike.jpg" data-featherlight="image">
+              <img src="images/completed_bike.jpg" alt="Completed bike.">
+            </a>
+            <p>Completed bike.</p>
+          </section>
 
-            <section class="3u">
-              <a href="images/2_rear_triangle.jpg" class="image feature" data-featherlight="image">
-                <img src="images/2_rear_triangle.jpg" alt="Rear triangle. Adjustable dropouts, anodized aluminum.">
-              </a>
-              <p>Rear triangle. Adjustable dropouts, anodized aluminum.</p>
-            </section>
-            <section class="3u">
-              <a href="images/2_sideview.jpg" class="image feature" data-featherlight="image">
-                <img src="images/2_sideview.jpg" alt="Tiger maple and cherry. Cherry feature stripe inlayed on sides of front triangle. Internal cables.">
-              </a>
-              <p>Sideview. Tiger maple and cherry. Cherry feature stripe inlayed on sides of front triangle. Internal cables.</p>
-            </section>
-            <section class="3u">
-              <a href="images/2_silver_inlay.jpg" class="image feature" data-featherlight="image">
-                <img src="images/2_silver_inlay.jpg" alt="Silver inlay. Mark creating sterling silver inlay on top tube.">
-              </a>
-              <p>Silver inlay. Mark creating sterling silver inlay on top tube.</p>
-            </section>
-            <section class="3u">
-              <a href="images/2_top_tube.jpg" class="image feature" data-featherlight="image">
-                <img src="images/2_top_tube.jpg" alt="Top tube. Sterling silver inlay on top tube.">
-              </a>
-              <p>Top tube. Sterling silver inlay on top tube.</p>
-            </section>
+          <section class="photo">
+            <a href="images/2_rear_triangle.jpg" data-featherlight="image">
+              <img src="images/2_rear_triangle.jpg" alt="Rear triangle. Adjustable dropouts, anodized aluminum.">
+            </a>
+            <p>Rear triangle. Adjustable dropouts, anodized aluminum.</p>
+          </section>
+          <section class="photo">
+            <a href="images/2_sideview.jpg" data-featherlight="image">
+              <img src="images/2_sideview.jpg" alt="Tiger maple and cherry. Cherry feature stripe inlayed on sides of front triangle. Internal cables.">
+            </a>
+            <p>Sideview. Tiger maple and cherry. Cherry feature stripe inlayed on sides of front triangle. Internal cables.</p>
+          </section>
+          <section class="photo">
+            <a href="images/2_silver_inlay.jpg" data-featherlight="image">
+              <img src="images/2_silver_inlay.jpg" alt="Silver inlay. Mark creating sterling silver inlay on top tube.">
+            </a>
+            <p>Silver inlay. Mark creating sterling silver inlay on top tube.</p>
+          </section>
+          <section class="photo">
+            <a href="images/2_top_tube.jpg" data-featherlight="image">
+              <img src="images/2_top_tube.jpg" alt="Top tube. Sterling silver inlay on top tube.">
+            </a>
+            <p>Top tube. Sterling silver inlay on top tube.</p>
+          </section>
 
-            <section class="3u">
-              <a href="images/3_completed_bike.jpg" class="image feature" data-featherlight="image">
-                <img src="images/3_completed_bike.jpg" alt="Completed Bike. Mark built this whimsical bike to look like it’s made from nuts and bolts. The tubes, nuts, and “unions” actually screw together with functional threads, although it was glued solid for the final result to stiffen the assembly.">
-              </a>
-              <p>Completed Bike. Mark built this whimsical bike to look like it’s made from nuts and bolts. The tubes, nuts, and “unions” actually screw together with functional threads, although it was glued solid for the final result to stiffen the assembly.</p>
-            </section>
-            <section class="3u">
-              <a href="images/3_union.jpg" class="image feature" data-featherlight="image">
-                <img src="images/3_union.jpg" alt="Union. The wood is tiger maple tubes, walnut nuts, and cherry unions.">
-              </a>
-              <p>Union. The wood is tiger maple tubes, walnut nuts, and cherry unions.</p>
-            </section>
-            <section class="3u">
-              <a href="images/3_head_badge.jpg" class="image feature" data-featherlight="image">
-                <img src="images/3_head_badge.jpg" alt="Head tube.">
-              </a>
-              <p>Head tube.</p>
-            </section>
-            <section class="3u">
-              <a href="images/3_rear_dropouts.jpg" class="image feature" data-featherlight="image">
-                <img src="images/3_rear_dropouts.jpg" alt="Rear dropouts, anodized aluminum.">
-              </a>
-              <p>Rear dropouts, anodized aluminum.</p>
-            </section>
-            <section class="3u">
-              <a href="images/3_sideview.jpg" class="image feature" data-featherlight="image">
-                <img src="images/3_sideview.jpg" alt="Sideview. Tubes are hollow for internal cables. This bike has Shimano Di2 shifters.">
-              </a>
-              <p>Sideview. Tubes are hollow for internal cables. This bike has Shimano Di2 shifters.</p>
-            </section>
-          </div>
+          <section class="photo">
+            <a href="images/3_completed_bike.jpg" data-featherlight="image">
+              <img src="images/3_completed_bike.jpg" alt="Completed Bike. Mark built this whimsical bike to look like it’s made from nuts and bolts. The tubes, nuts, and “unions” actually screw together with functional threads, although it was glued solid for the final result to stiffen the assembly.">
+            </a>
+            <p>Completed Bike. Mark built this whimsical bike to look like it’s made from nuts and bolts. The tubes, nuts, and “unions” actually screw together with functional threads, although it was glued solid for the final result to stiffen the assembly.</p>
+          </section>
+          <section class="photo">
+            <a href="images/3_union.jpg" data-featherlight="image">
+              <img src="images/3_union.jpg" alt="Union. The wood is tiger maple tubes, walnut nuts, and cherry unions.">
+            </a>
+            <p>Union. The wood is tiger maple tubes, walnut nuts, and cherry unions.</p>
+          </section>
+          <section class="photo">
+            <a href="images/3_head_badge.jpg" data-featherlight="image">
+              <img src="images/3_head_badge.jpg" alt="Head tube.">
+            </a>
+            <p>Head tube.</p>
+          </section>
+          <section class="photo">
+            <a href="images/3_rear_dropouts.jpg" data-featherlight="image">
+              <img src="images/3_rear_dropouts.jpg" alt="Rear dropouts, anodized aluminum.">
+            </a>
+            <p>Rear dropouts, anodized aluminum.</p>
+          </section>
+          <section class="photo">
+            <a href="images/3_sideview.jpg" data-featherlight="image">
+              <img src="images/3_sideview.jpg" alt="Sideview. Tubes are hollow for internal cables. This bike has Shimano Di2 shifters.">
+            </a>
+            <p>Sideview. Tubes are hollow for internal cables. This bike has Shimano Di2 shifters.</p>
+          </section>
         </section>
       </div>
 

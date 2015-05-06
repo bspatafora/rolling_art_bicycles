@@ -12,6 +12,20 @@
     color: #3E73FF;
   }
 
+  .photo {
+    padding: 0 10px;
+    width: 25%;
+  }
+
+  .photo img {
+    width: 100%;
+  }
+
+  .photo p {
+    font-size: 0.85em;
+    line-height: 1.6em;
+  }
+
 /* Basic */
 
 	body {
