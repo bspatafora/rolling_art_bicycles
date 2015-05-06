@@ -1,10 +1,10 @@
 $(function() {
   var container = $('#photos');
-  var oneQuarter = container.width / 4;
+  var oneThird = container.width / 3;
 
   container.imagesLoaded(function() {
     container.masonry({
-      columnWidth: oneQuarter,
+      columnWidth: oneThird,
       itemSelector: '.photo'
     });
   });

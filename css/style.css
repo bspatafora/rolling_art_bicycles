@@ -13,17 +13,14 @@
   }
 
   .photo {
-    padding: 0 10px;
-    width: 25%;
+    margin-bottom: 0.75em;
+    padding: 0 15px;
+    width: 33.33333%;
   }
 
   .photo img {
+    margin-bottom: 0.5em;
     width: 100%;
-  }
-
-  .photo p {
-    font-size: 0.85em;
-    line-height: 1.6em;
   }
 
 /* Basic */
