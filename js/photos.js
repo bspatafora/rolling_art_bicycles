@@ -1,5 +1,5 @@
 $(function() {
-  var container = $('#photos');
+  var container = $('#photos').masonry();
   var oneThird = container.width / 3;
 
   container.imagesLoaded(function() {
